@@ -1,0 +1,26 @@
+.projects {
+  width: 100%;
+  min-height: 900px;
+  background-image: url("../../../../public/assets/background-picture2.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects_container {
+  padding: 36px 24px;
+  width: 100%;
+  min-height: 900px;
+  background-color: #171818b4;
+  padding-top: 96px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.title span {
+  color: var(--primary-color);
+}
