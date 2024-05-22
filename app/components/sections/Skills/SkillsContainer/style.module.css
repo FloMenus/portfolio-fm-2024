@@ -1,0 +1,75 @@
+.skills_container {
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  max-width: 1300px;
+  padding: 48px;
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  backdrop-filter: blur(200px);
+  --webkit-backdrop-filter: blur(200px);
+  background: rgb(30, 30, 30);
+  background: linear-gradient(
+    140deg,
+    rgba(30, 30, 30, 0.5) 0%,
+    rgba(41, 41, 41, 0.5) 50%,
+    rgba(30, 30, 30, 0.5) 100%
+  );
+  /* position: relative; */
+}
+
+.skill {
+  position: relative;
+}
+
+.skill_image {
+  filter: grayscale(200%);
+  transition: 0.3s ease all;
+}
+
+.skill_image:hover {
+  filter: grayscale(0%);
+}
+
+.message_box {
+  position: absolute;
+  width: max-content;
+  border-radius: 8px;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  transition: 0.3s ease all;
+  background-color: #121212ea;
+  backdrop-filter: blur(2px);
+  --webkit-backdrop-filter: blur(2px);
+  padding: 12px 24px;
+  transition: 0.3s ease all;
+  opacity: 0;
+}
+
+.message_box::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #121212ea;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.displayed {
+  opacity: 1;
+}
+
+.shape5 {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  z-index: -1;
+}
