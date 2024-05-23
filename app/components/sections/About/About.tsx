@@ -31,7 +31,7 @@ export default function About() {
         </article>
         <div className={style.image_container}>
           <Image
-            src="/assets/fm-image.png"
+            src="assets/fm-image.png"
             alt="florent-menus"
             width={352}
             height={398}
