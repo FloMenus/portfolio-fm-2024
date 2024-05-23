@@ -6,7 +6,7 @@
   background-position: center;
 }
 
-.projects_container {
+.projects_main {
   padding: 36px 24px;
   width: 100%;
   min-height: 900px;
@@ -19,8 +19,56 @@
   font-size: 32px;
   color: var(--secondary-color);
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .title span {
   color: var(--primary-color);
+}
+
+.projects_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.project {
+  width: 390px;
+  height: 230px;
+  background-color: #121212;
+  border-radius: 8px;
+  border: 1px solid #dedede27;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-image: url("../../../../public/assets/shape6.png");
+  background-size: contain;
+  background-position-y: 110%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.project_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+.project_link {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin-top: 12px;
+  background-color: var(--primary-color);
+  padding: 4px 24px;
+  border-radius: 4px;
+  color: #121212;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
 }
