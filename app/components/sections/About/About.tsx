@@ -29,22 +29,22 @@ export default function About() {
             aliquip ex ea commodo consequat..
           </p>
         </article>
-        <div className={style.image_container}>
-          <Image
-            src="/assets/fm-image.png"
-            alt="florent-menus"
-            width={352}
-            height={398}
-            className={style.image}
-          />
-          {/* <Image
+        {/* <div className={style.image_container}> */}
+        <Image
+          src="/assets/fm-image.png"
+          alt="florent-menus"
+          width={291}
+          height={350}
+          className={style.image}
+        />
+        {/* <Image
             src="/assets/shape4.svg"
             className={style.shape2}
             alt="shape2"
             width={434}
             height={489}
           /> */}
-        </div>
+        {/* </div> */}
       </div>
     </section>
   );

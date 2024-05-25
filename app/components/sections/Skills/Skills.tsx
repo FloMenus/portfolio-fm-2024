@@ -7,6 +7,13 @@ export default function Skills() {
     <section className={style.skills}>
       <h3 className={style.title}>
         MES <span>COMPÉTENCES</span>
+        {/* <Image
+          src="/assets/shape3.svg"
+          alt="shape3"
+          className={style.shape3}
+          width={1008}
+          height={629}
+        /> */}
       </h3>
       <p className={style.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -14,6 +21,7 @@ export default function Skills() {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat..
       </p>
+
       <SkillsContainer />
     </section>
   );

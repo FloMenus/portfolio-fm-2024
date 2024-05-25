@@ -12,6 +12,7 @@
   font-size: 32px;
   color: var(--secondary-color);
   text-align: center;
+  position: relative;
 }
 
 .title span {
@@ -44,11 +45,15 @@
   );
 }
 
-.skill_image {
-  filter: grayscale(200%);
-  transition: 0.3s ease all;
+.shape3 {
+  position: absolute;
+  z-index: -1;
+  top: 200px;
+  right: 180px;
 }
 
-.skill_image:hover {
-  filter: grayscale(0%);
+@media screen and (max-width: 1024px) {
+  .text {
+    font-size: 14px;
+  }
 }

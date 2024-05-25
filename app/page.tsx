@@ -8,6 +8,8 @@ import Projects from "./components/sections/Projects/Projects";
 import Contact from "./components/sections/Contact/Contact";
 import Footer from "./components/sections/Footer/Footer";
 
+require("dotenv").config();
+
 export default function Home() {
   return (
     <>
