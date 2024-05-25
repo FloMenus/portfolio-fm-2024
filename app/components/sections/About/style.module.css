@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 64px;
   z-index: 2;
   overflow: hidden;
 }
@@ -32,6 +32,9 @@
   flex-direction: column;
   gap: 42px;
   max-width: 712px;
+}
+.image {
+  align-items: center;
 }
 
 .paragraph {
@@ -51,4 +54,24 @@
   z-index: -1;
   right: -40px;
   bottom: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .paragraph {
+    font-size: 14px;
+  }
+  .image {
+    height: 300px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .about {
+    padding: 36px 12px;
+  }
+  .text_and_image {
+    flex-direction: column;
+    gap: 48px;
+  }
 }

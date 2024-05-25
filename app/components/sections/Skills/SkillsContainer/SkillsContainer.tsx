@@ -42,8 +42,8 @@ export default function SkillsContainer() {
             src={`/assets/skills/${skill.image}.png`}
             alt={skill.name}
             className={style.skill_image}
-            width={86}
-            height={85}
+            width={70}
+            height={70}
             onMouseEnter={() => {
               setSelectedSkill(skill.name);
             }}
