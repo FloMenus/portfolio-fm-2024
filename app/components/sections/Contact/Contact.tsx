@@ -5,7 +5,7 @@ import Form from "./Form/Form";
 
 export default function Contact() {
   return (
-    <section className={style.contact}>
+    <section className={style.contact} id={"contact"}>
       <h3 className={style.title}>
         ME <span>CONTACTER</span>
       </h3>

@@ -1,7 +1,7 @@
+"use client";
 import style from "./style.module.css";
-import img from "next/image";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -28,10 +28,12 @@ export default function Header() {
         />
       </div>
       <div className={style.buttons_group}>
-        <button className={style.button_1}>Me contacter</button>
+        <Link className={style.button_1} href={"#contact"}>
+          Me contacter
+        </Link>
         <a
           className={style.button_2}
-          href="/portfolio-fm-2024/test.png"
+          href="/portfolio-fm-2024/CV-florent-menus.pdf"
           download
         >
           Télécharger mon CV
