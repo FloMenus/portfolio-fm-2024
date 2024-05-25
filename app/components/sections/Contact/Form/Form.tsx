@@ -93,7 +93,6 @@ export default function Form() {
 
   return (
     <form className={style.form}>
-      {/* Nom */}
       <div className={style.form_group}>
         <label htmlFor="lastName" className={style.label}>
           Nom
@@ -109,7 +108,6 @@ export default function Form() {
           }}
         />
       </div>
-      {/* Prénom */}
       <div className={style.form_group}>
         <label htmlFor="firstName" className={style.label}>
           Prénom
@@ -125,7 +123,6 @@ export default function Form() {
           }}
         />
       </div>
-      {/* Mail */}
       <div className={style.form_group}>
         <label htmlFor="mail" className={style.label}>
           Email
@@ -141,7 +138,6 @@ export default function Form() {
           }}
         />
       </div>
-      {/* Message */}
       <div className={style.form_group}>
         <label htmlFor="message" className={style.label}>
           Message
@@ -156,7 +152,6 @@ export default function Form() {
           }}
         />
       </div>
-      {/* Submit */}
       <button
         onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
           handleSubmit(e);

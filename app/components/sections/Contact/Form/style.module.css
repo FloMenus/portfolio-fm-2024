@@ -32,8 +32,8 @@
 .textarea {
   height: 180px;
   resize: none;
-  font-family: Hind;
   font-size: 14px;
+  font-family: "Hind", sans-serif;
 }
 
 .button {
@@ -53,9 +53,9 @@
   color: var(--primary-color);
 }
 .button_text {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
-  font-family: Hind;
+  font-family: "Hind", sans-serif;
 }
 
 @media screen and (max-width: 550px) {
