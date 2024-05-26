@@ -12,9 +12,9 @@ export default function Contact() {
       <div className={style.contact_container}>
         <div className={style.informations_section}>
           <p className={style.paragraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris
+            {
+              "Vous avez un projet à me proposer, une question à me poser ou simplement envie de discuter ? N'hésitez pas à me contacter via le formulaire ci-dessous ou par téléphone et mail."
+            }
           </p>
           <div className={style.informations}>
             <div className={style.information}>
