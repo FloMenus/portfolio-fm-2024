@@ -19,7 +19,7 @@ export default function Contact() {
           <div className={style.informations}>
             <div className={style.information}>
               <Image
-                src="/portfolio-fm-2024/assets/phone.png"
+                src="/assets/phone.png"
                 alt="phone"
                 width={32}
                 height={32}
@@ -28,7 +28,7 @@ export default function Contact() {
             </div>
             <div className={style.information}>
               <Image
-                src="/portfolio-fm-2024/assets/mail.png"
+                src="/assets/mail.png"
                 alt="phone"
                 width={32}
                 height={32}
