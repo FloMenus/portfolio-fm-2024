@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   description:
     "Portfolio de Florent MENUS, développeur junior. Découvrez mes projets, mes compétences et comment me contacter.",
   icons: {
-    icon: "/portfolio-fm-2024/favicon-32x32.png",
-    apple: "/portfolio-fm-2024/apple-touch-icon.png",
+    icon: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 

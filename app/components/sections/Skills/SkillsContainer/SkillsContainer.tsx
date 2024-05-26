@@ -39,7 +39,7 @@ export default function SkillsContainer() {
         <div className={style.skill} key={skill.name}>
           <Image
             key={skill.name}
-            src={`/portfolio-fm-2024/assets/skills/${skill.image}.png`}
+            src={`/assets/skills/${skill.image}.png`}
             alt={skill.name}
             className={style.skill_image}
             width={70}

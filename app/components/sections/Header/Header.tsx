@@ -13,14 +13,14 @@ export default function Header() {
         <h1 className={style.title}>FLORENT MENUS</h1>
         <h2 className={style.subtitle}>DÉVELOPPEUR JUNIOR</h2>
         <Image
-          src="/portfolio-fm-2024/assets/shape2.svg"
+          src="/assets/shape2.svg"
           className={style.shape2}
           alt="shape2"
           width={434}
           height={489}
         />
         <Image
-          src="/portfolio-fm-2024/assets/shape3.svg"
+          src="/assets/shape3.svg"
           className={style.shape3}
           alt="shape3"
           width={1008}
@@ -31,16 +31,12 @@ export default function Header() {
         <Link className={style.button_1} href={"#contact"}>
           Me contacter
         </Link>
-        <a
-          className={style.button_2}
-          href="/portfolio-fm-2024/CV-florent-menus.pdf"
-          download
-        >
+        <a className={style.button_2} href="/CV-florent-menus.pdf" download>
           Télécharger mon CV
         </a>
       </div>
       <Image
-        src="/portfolio-fm-2024/assets/shape1.svg"
+        src="/assets/shape1.svg"
         className={style.shape1}
         alt="shape1"
         width={2550}
