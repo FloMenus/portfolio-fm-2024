@@ -27,7 +27,8 @@ export default function Projects() {
             <div key={index} className={style.project}>
               <h4 className={style.project_title}>{project.title}</h4>
               <Link
-                href={"projects" + project.link}
+                // href={"projects" + project.link}
+                href={project.link}
                 className={style.project_link}
               >
                 Consulter

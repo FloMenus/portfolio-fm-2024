@@ -16,10 +16,9 @@ export default function Skills() {
         /> */}
       </h3>
       <p className={style.text}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat..
+        {
+          "Voici les compétences que j'ai acquises au cours de ma formation et de mes projets personnels. J'ai une préférence pour le développement front-end, mais je suis également à l'aise avec le back-end."
+        }
       </p>
 
       <SkillsContainer />

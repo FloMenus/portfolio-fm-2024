@@ -49,7 +49,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={hind.className}>
+    <html
+      lang="fr"
+      className={hind.className}
+      content="text/html; charset=UTF-8"
+    >
       <body>{children}</body>
     </html>
   );
