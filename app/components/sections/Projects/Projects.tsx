@@ -3,6 +3,11 @@ import Link from "next/link";
 
 const projects: { title: string; link: string; description: string }[] = [
   {
+    title: "Sandbox Angular",
+    link: "https://fm-ng-sandbox.netlify.app/",
+    description: "Sandbox pour tester des fonctionnalités Angular",
+  },
+  {
     title: "Site vitrine Yvea",
     link: "https://fm-yvea-landing.onrender.com/",
     description:
