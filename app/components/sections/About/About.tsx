@@ -11,17 +11,17 @@ export default function About() {
         <article className={style.text}>
           <p className={style.paragraph}>
             {
-              "Je suis un développeur web passionné par la création de sites web et d'applications. Je suis spécialisé dans le développement front-end et j'utilise les dernières technologies pour créer des interface utilisateurs modernes et intuitives."
+              "Je suis un développeur web passionné par la création de sites web et d'applications, avec des compétences en développement fullstack. J'aime explorer les dernières technologies pour créer des interfaces utilisateurs modernes et intuitives, tout en assurant des architectures back-end performantes et sécurisées."
             }
           </p>
           <p className={style.paragraph}>
             {
-              "Fort de mon experience acquise en alternance, je suis capable de travailler en équipe et de m'adapter à des environnements de travail variés. Je suis également capable de travailler en autonomie et de gérer des projets de A à Z."
+              "Mon expérience en alternance m'a permis de développer une grande capacité d'adaptation et de collaboration au sein d'une équipe. Je suis également à l'aise en autonomie, capable de mener un projet de A à Z, de l'analyse des besoins à la mise en production."
             }
           </p>
           <p className={style.paragraph}>
             {
-              "Je suis toujours à la recherche de nouveaux projets et de nouveaux challenges. N'hésitez pas à me contacter pour discuter de votre projet !"
+              "Actuellement à la recherche de mon premier CDI, je suis enthousiaste à l'idée de mettre à profit mes compétences au sein d'une équipe dynamique et innovante. Passionné par les nouvelles technologies et toujours curieux d'apprendre, je suis prêt à relever de nouveaux défis et à contribuer activement à la réussite des projets de votre entreprise. N'hésitez pas à me contacter pour discuter de vos besoins et de la manière dont je peux apporter une valeur ajoutée à votre équipe !"
             }
           </p>
         </article>
