@@ -1,75 +1,37 @@
 "use client";
-
 import style from "./style.module.css";
 import Image from "next/image";
-import { useState } from "react";
+import { Skills as SkillsType } from "../../../../data/skills";
 
-const skills: { name: string; image: string }[] = [
-  { name: "HTML5", image: "html" },
-  { name: "CSS3", image: "css" },
-  { name: "JavaScript", image: "javascript" },
-  { name: "TypeScript", image: "typescript" },
-  { name: "React", image: "react" },
-  { name: "Next.js", image: "nextjs" },
-  { name: "SaSS", image: "sass" },
-  { name: "MaterialUI", image: "mui" },
-  { name: "Tailwind CSS", image: "tailwind" },
-  { name: "Redux", image: "redux" },
-  { name: "Node.js", image: "nodejs" },
-  { name: "Express.js", image: "express" },
-  { name: "MySQL", image: "mysql" },
-  { name: "MongoDB", image: "mongodb" },
-  { name: "Nest.js", image: "nest" },
-  { name: "Jest", image: "jest" },
-  { name: "Git", image: "git" },
-  { name: "Figma", image: "figma" },
-  { name: "Photoshop", image: "photoshop" },
-  { name: "Illustrator", image: "illustrator" },
-];
-
-export default function SkillsContainer() {
-  const [selectedSkill, setSelectedSkill]: [
-    string,
-    (selectedSkill: string) => void
-  ] = useState("");
-
+export default function SkillsContainer(skills: SkillsType) {
   return (
     <div className={style.skills_container}>
-      {skills.map((skill) => (
-        <div className={style.skill} key={skill.name}>
-          <Image
-            key={skill.name}
-            src={`/assets/skills/${skill.image}.png`}
-            alt={skill.name}
-            className={style.skill_image}
-            width={70}
-            height={70}
-            onMouseEnter={() => {
-              setSelectedSkill(skill.name);
-            }}
-            onMouseLeave={() => {
-              selectedSkill === skill.name && setSelectedSkill("");
-            }}
-          />
-
-          <div
-            className={
-              selectedSkill === skill.name
-                ? `${style.message_box} ${style.displayed}`
-                : style.message_box
-            }
-          >
-            {skill.name}
+      <div className={style.header}>
+        <Image src={skills.image} width={103} height={104} alt="Skills" />
+        <h4 className={style.title}>{skills.title}</h4>
+        <h5 className={style.subtitle}>{skills.subtitle}</h5>
+      </div>
+      <div className={style.skills_group}>
+        {skills.categories.map((category, index) => (
+          <div key={index} className={style.skills_group}>
+            <h6 className={style.skills_group_title}>{category.name}</h6>
+            <div className={style.skills_list}>
+              {category.subskills.map((subskill, index) => (
+                <div key={index} className={style.skill}>
+                  <p className={style.skill_name}>{subskill.name}</p>
+                  <div className={style.skill_progress_container}>
+                    <progress
+                      className={style.skill_progress}
+                      value={subskill.value}
+                      max="100"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
-      {/* <Image
-        src="/assets/shape5.svg"
-        alt="shape5"
-        className={style.shape5}
-        width={677}
-        height={770}
-      /> */}
+        ))}
+      </div>
     </div>
   );
 }
