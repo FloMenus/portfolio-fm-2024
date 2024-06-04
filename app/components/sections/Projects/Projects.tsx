@@ -29,7 +29,7 @@ const projects: { title: string; link: string; description: string }[] = [
     description: "Application de gestion de tâches",
   },
   {
-    title: "Généraeur Pokémon",
+    title: "Générateur Pokémon",
     link: "https://random-pokemon-flomenus.netlify.app/",
     description: "Générateur de Pokémon aléatoire",
   },

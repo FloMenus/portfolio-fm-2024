@@ -91,6 +91,11 @@
   transition: 0.3s ease;
 }
 
+.shape {
+  z-index: -2;
+  position: absolute;
+}
+
 .shape1 {
   position: absolute;
   top: 600px;
@@ -98,14 +103,14 @@
 
 .shape2 {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: -201px;
   left: -357px;
 }
 
 .shape3 {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: -99px;
   left: 200px;
 }

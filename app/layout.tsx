@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "./components/sections/Footer/Footer";
+import { Providers } from "./providers";
 
 const hind = localFont({
   src: [
@@ -54,7 +54,9 @@ export default function RootLayout({
       className={hind.className}
       content="text/html; charset=UTF-8"
     >
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

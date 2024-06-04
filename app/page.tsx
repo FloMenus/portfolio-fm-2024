@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./page.module.css";
 
 import Header from "./components/sections/Header/Header";
@@ -9,12 +8,15 @@ import Contact from "./components/sections/Contact/Contact";
 import Footer from "./components/sections/Footer/Footer";
 import LinkWidget from "./components/LinksWidget/LinkWidget";
 
+import { Suspense } from "react";
+
 require("dotenv").config();
 
 export default function Home() {
   return (
     <>
       <main className={style.main}>
+        {/* <Suspense fallback={<div>Loading...</div>}> */}
         <LinkWidget />
         <Header />
         <About />
@@ -22,6 +24,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Footer />
+        {/* </Suspense> */}
       </main>
     </>
   );
