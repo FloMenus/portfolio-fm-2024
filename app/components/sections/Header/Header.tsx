@@ -2,6 +2,8 @@
 import style from "./style.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { Parallax } from "react-scroll-parallax";
+import "animate.css";
 
 export default function Header() {
   return (
@@ -12,20 +14,23 @@ export default function Header() {
       <div className={style.text}>
         <h1 className={style.title}>FLORENT MENUS</h1>
         <h2 className={style.subtitle}>DÉVELOPPEUR JUNIOR</h2>
-        <Image
-          src="/assets/shape2.svg"
-          className={style.shape2}
-          alt="shape2"
-          width={434}
-          height={489}
-        />
-        <Image
-          src="/assets/shape3.svg"
-          className={style.shape3}
-          alt="shape3"
-          width={1008}
-          height={629}
-        />
+        <Parallax speed={20} className={style.shape2}>
+          <Image
+            src="/assets/shape2.svg"
+            alt="shape2"
+            width={434}
+            height={489}
+          />
+        </Parallax>
+        <Parallax speed={5} className={style.shape3}>
+          <Image
+            src="/assets/shape3.svg"
+            // className={style.shape3}
+            alt="shape3"
+            width={1008}
+            height={629}
+          />
+        </Parallax>
       </div>
       <div className={style.buttons_group}>
         <Link className={style.button_1} href={"#contact"}>
@@ -35,6 +40,7 @@ export default function Header() {
           Télécharger mon CV
         </a>
       </div>
+
       <Image
         src="/assets/shape1.svg"
         className={style.shape1}

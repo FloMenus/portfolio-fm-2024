@@ -1,17 +1,16 @@
 .projects {
   width: 100%;
   min-height: 900px;
-  background-image: url("../../../../public/assets/background-picture2.svg");
+  background-image: url("../../../../public/assets/background-picture2.png");
   background-size: cover;
   background-position: center;
 }
 
 .projects_main {
-  padding: 36px 24px;
+  padding: 96px 24px 124px 24px;
   width: 100%;
   min-height: 900px;
   background-color: #171818b4;
-  padding-top: 96px;
 }
 
 .title {

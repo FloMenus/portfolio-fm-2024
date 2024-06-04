@@ -47,6 +47,10 @@ export const skills: Skills[] = [
             name: "Redux",
             value: 65,
           },
+          {
+            name: "NgRx",
+            value: 40,
+          },
         ],
       },
       {
