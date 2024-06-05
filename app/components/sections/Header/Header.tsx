@@ -3,7 +3,6 @@ import style from "./style.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Parallax } from "react-scroll-parallax";
-import "animate.css";
 
 export default function Header() {
   return (
@@ -25,7 +24,6 @@ export default function Header() {
         <Parallax speed={5} className={style.shape3}>
           <Image
             src="/assets/shape3.svg"
-            // className={style.shape3}
             alt="shape3"
             width={1008}
             height={629}

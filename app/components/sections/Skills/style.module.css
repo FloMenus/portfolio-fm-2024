@@ -6,7 +6,6 @@
   align-items: center;
   gap: 48px;
 }
-
 .title {
   font-weight: 700;
   font-size: 32px;
@@ -14,11 +13,9 @@
   text-align: center;
   position: relative;
 }
-
 .title span {
   color: var(--primary-color);
 }
-
 .skills_container {
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +29,6 @@
     font-size: 14px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .skills_container {
     gap: 48px;
