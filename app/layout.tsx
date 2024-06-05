@@ -1,8 +1,7 @@
+import "./globals.css";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
-import "./globals.css";
 import { Providers } from "./providers";
-import Head from "next/head";
 
 const hind = localFont({
   src: [

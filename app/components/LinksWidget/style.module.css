@@ -14,7 +14,6 @@
   backdrop-filter: blur(10px);
   --webkit-backdrop-filter: blur(10px);
 }
-
 .link {
   display: flex;
   justify-content: center;
