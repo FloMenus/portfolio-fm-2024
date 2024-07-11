@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   gap: 48px;
+  background-color: #0f0f0f;
+  color: var(--secondary-color);
 }
 .title {
   font-weight: 700;

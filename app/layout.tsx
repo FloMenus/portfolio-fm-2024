@@ -54,7 +54,6 @@ export default function RootLayout({
       className={hind.className}
       content="text/html; charset=UTF-8"
     >
-      <head></head>
       <body>
         <Providers>{children}</Providers>
       </body>
