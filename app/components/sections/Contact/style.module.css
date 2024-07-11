@@ -2,6 +2,8 @@
   width: 100%;
   min-height: 900px;
   padding-top: 96px;
+  background-color: #0f0f0f;
+  color: var(--secondary-color);
 }
 .title {
   font-weight: 700;
