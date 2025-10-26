@@ -20,9 +20,9 @@ interface FormErrors {
 type ToastType = "success" | "error" | null;
 
 export default function Form() {
-  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
   const [formData, setFormData] = useState<FormData>({
     lastName: "",
@@ -40,6 +40,9 @@ export default function Form() {
   });
 
   useEffect(() => {
+    if (!publicKey) {
+      return;
+    }
     emailjs.init(publicKey);
   }, [publicKey]);
 
@@ -107,6 +110,11 @@ export default function Form() {
 
     if (Object.keys(formErrors).length > 0) {
       showToast("error", "Veuillez corriger les erreurs du formulaire");
+      return;
+    }
+
+    if (!serviceId || !templateId || !publicKey) {
+      showToast("error", "Configuration EmailJS manquante. Contactez l'administrateur.");
       return;
     }
 
