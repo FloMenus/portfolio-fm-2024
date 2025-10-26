@@ -1,2 +1,20 @@
+# Robots.txt pour Portfolio Florent Menus
+
+# Autoriser tous les robots
 User-agent: *
-Disallow:
+Allow: /
+
+# Bloquer les fichiers sensibles
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://florent-menus.com/sitemap.xml
+
+# Crawl-delay pour les bots agressifs
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

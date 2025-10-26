@@ -1,0 +1,27 @@
+{
+  "name": "Florent Menus - Portfolio",
+  "short_name": "FM Portfolio",
+  "description": "Portfolio de Florent Menus, développeur web full stack",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171818",
+  "theme_color": "#2feaa8",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/fm-logo.png",
+      "sizes": "1000x1000",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

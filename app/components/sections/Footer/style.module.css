@@ -9,7 +9,7 @@
 }
 .text {
   font-weight: 400;
-  font-size: 12px;
+  font-size: var(--font-size-tiny);
   color: var(--secondary-color);
 }
 

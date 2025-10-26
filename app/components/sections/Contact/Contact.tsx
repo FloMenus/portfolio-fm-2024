@@ -5,9 +5,9 @@ import Form from "./Form/Form";
 export default function Contact() {
   return (
     <section className={style.contact} id={"contact"}>
-      <h3 className={style.title}>
+      <h2 className={style.title}>
         ME <span>CONTACTER</span>
-      </h3>
+      </h2>
       <div className={style.contact_container}>
         <div className={style.informations_section}>
           <p className={style.paragraph}>
@@ -23,7 +23,9 @@ export default function Contact() {
                 width={32}
                 height={32}
               />
-              <p className={style.information_text}>+33 6 46 03 42 41</p>
+              <a href="tel:+33646034241" className={style.information_text}>
+                +33 6 46 03 42 41
+              </a>
             </div>
             <div className={style.information}>
               <Image
@@ -32,7 +34,9 @@ export default function Contact() {
                 width={32}
                 height={32}
               />
-              <p className={style.information_text}>florent.mns@gmail.com</p>
+              <a href="mailto:florent.mns@gmail.com" className={style.information_text}>
+                florent.mns@gmail.com
+              </a>
             </div>
           </div>
         </div>

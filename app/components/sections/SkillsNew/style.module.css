@@ -1,4 +1,4 @@
-.skills {
+.skillsnew {
   min-height: 900px;
   padding: 96px 24px;
   display: flex;
@@ -18,12 +18,14 @@
 .title span {
   color: var(--primary-color);
 }
-.skills_container {
+.skillsnew_container {
   display: flex;
   flex-wrap: wrap;
   gap: 84px;
   justify-content: center;
   align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -32,7 +34,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .skills_container {
+  .skillsnew_container {
     gap: 48px;
   }
 }

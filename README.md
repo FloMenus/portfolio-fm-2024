@@ -2,6 +2,32 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+### 1. Environment Variables
+
+First, create a `.env.local` file at the root of the project and add your EmailJS credentials:
+
+```bash
+cp .env.example .env.local
+```
+
+Then fill in your EmailJS credentials in `.env.local`:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
+```
+
+You can get these credentials from [EmailJS](https://www.emailjs.com/).
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
+
 First, run the development server:
 
 ```bash

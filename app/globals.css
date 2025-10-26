@@ -1,6 +1,17 @@
 :root {
   --primary-color: #2feaa8;
   --secondary-color: #dedede;
+  
+  /* Échelle typographique harmonisée */
+  --font-size-h1: 48px;
+  --font-size-h1-mobile: 36px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+  --font-size-tag: 13px;
+  --font-size-tiny: 12px;
 }
 
 * {
