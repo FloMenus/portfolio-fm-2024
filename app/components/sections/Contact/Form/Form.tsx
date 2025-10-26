@@ -24,6 +24,12 @@ export default function Form() {
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
+  console.log('🔍 EmailJS Config Check:', {
+    serviceId: serviceId ? '✅ Loaded' : '❌ Missing',
+    templateId: templateId ? '✅ Loaded' : '❌ Missing',
+    publicKey: publicKey ? '✅ Loaded' : '❌ Missing',
+  });
+
   const [formData, setFormData] = useState<FormData>({
     lastName: "",
     firstName: "",
@@ -41,8 +47,11 @@ export default function Form() {
 
   useEffect(() => {
     if (!publicKey) {
+      console.error('❌ EmailJS Public Key is missing!');
+      console.error('Available env vars:', Object.keys(process.env).filter(k => k.startsWith('NEXT_PUBLIC')));
       return;
     }
+    console.log('✅ Initializing EmailJS with public key');
     emailjs.init(publicKey);
   }, [publicKey]);
 
@@ -115,9 +124,15 @@ export default function Form() {
 
     if (!serviceId || !templateId || !publicKey) {
       showToast("error", "Configuration EmailJS manquante. Contactez l'administrateur.");
+      console.error('❌ Missing EmailJS configuration:', { 
+        serviceId: serviceId || 'MISSING', 
+        templateId: templateId || 'MISSING', 
+        publicKey: publicKey || 'MISSING' 
+      });
       return;
     }
 
+    console.log('📧 Attempting to send email...');
     setIsSubmitting(true);
 
     try {
@@ -128,8 +143,10 @@ export default function Form() {
         message: formData.message,
       };
 
+      console.log('📤 Sending with params:', templateParams);
       await emailjs.send(serviceId, templateId, templateParams);
 
+      console.log('✅ Email sent successfully!');
       showToast("success", "Message envoyé avec succès ! 🚀");
       setFormData({
         lastName: "",
@@ -140,6 +157,11 @@ export default function Form() {
       setTouched({});
       setErrors({});
     } catch (error) {
+      console.error('❌ EmailJS Error:', error);
+      if (error instanceof Error) {
+        console.error('Error message:', error.message);
+        console.error('Error stack:', error.stack);
+      }
       showToast("error", "Erreur lors de l'envoi. Veuillez réessayer.");
     } finally {
       setIsSubmitting(false);
